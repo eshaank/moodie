@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import os
 
-os.environ['OPENAI_API_KEY'] = ""
+os.environ['OPENAI_API_KEY'] = "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"
 
 import logging
 import sys
@@ -25,11 +25,11 @@ movies = {}
 def home():
     return render_template('home.html')
 
-@app.route('/recommend', methods=['POST'])
+@app.route('/', methods=['POST'])
 def recommend():
     query = request.form['query']
     response = query_engine.query(query)
-    return render_template('recommendation.html', query=query, response=response)
+    return render_template('home.html', query=query, response=response)
 
 @app.route('/rate', methods=['GET', 'POST'])
 def rate():

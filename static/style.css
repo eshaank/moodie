@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap');
+
+body {
+    margin: auto;
+    font-family: "Be Vietnam Pro";
+    padding: 10px;
+
+}
+
+.title {
+    text-align: center;
+}
+
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+    color: black;
+    outline: none;
+    width: 100%;
+    font-family:"Be Vietnam Pro";
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.75;
+    font-family:"Be Vietnam Pro";
+}
+
+input[type=text]#movie {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+    color: black;
+    outline: none;
+    width: 30%;
+    font-family:"Be Vietnam Pro";
+}
+
+input[type='number']{
+    width: 80px;
+    user-select: none;
+    border-radius: 8px;
+    border-color: black;
+    border-width: 1px;
+    padding: 4px;
+} 
+
+:focus {
+    outline: none !important;
+}
+
+.button-container{
+    text-align: center;
+}
+
+input[type=submit] {
+	background: #FFC27A;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 15px;
+    padding: 8px;
+	text-shadow: none;
+    font-family: "Be Vietnam Pro";
+}
+
+input[type=submit]:hover {
+	cursor: pointer;
+}
+
+.results-title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.highlight-mood {
+    width: max-content;
+    height: 40px;
+    background: linear-gradient(
+        to bottom,
+        transparent 65%,
+        #FFEA7A 50%
+    );
+}
+
+.highlight-rec {
+    width: max-content;
+    height: 25px;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        #FFEA7A 50%
+    );
+}
+
+.rate-button {
+    text-decoration: none;
+    background: #7AD7FF;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 15px;
+    padding: 8px;
+	text-shadow: none;
+    font-family: "Be Vietnam Pro";
+    font-size: 14px;
+}
+
+.rate-button:hover {
+	cursor: pointer;
+}
+
+.home-button {
+    text-decoration: none;
+    background: #7AD7FF;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 15px;
+    padding: 8px;
+	text-shadow: none;
+    font-family: "Be Vietnam Pro";
+    font-size: 14px;
+}
+
+.home-button:hover {
+	cursor: pointer;
+}
+

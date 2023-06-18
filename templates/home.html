@@ -2,18 +2,57 @@
 <html>
 
 <head>
-    <title>moodie</title>
+    <title>Moodie</title>
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 
 <body>
-    <h1>Welcome to Moodie!</h1>
-    <p>How are you feeling? Enter your current mood and how you would like to feel after watching a movive.</p>
-    <form action="/recommend" method="post">
-        <input type="text" name="query" placeholder="Enter your mood">
-        <input type="submit" value="Get Recommendations">
-    </form>
-    <p>Already watched some movies? Rate them and provide your feedback to get movies similar to your taste.</p>
-    <a href="/rate">Rate Movies</a>
+    <div class="title">
+        <h1>Welcome to <u style="text-decoration-color:#CF9FFF; text-underline-offset: 5px">Moodie</u>!</h1>
+    </div>
+    
+    <p>Enter your current mood and how you would like to feel after watching a movie.</p>
+    
+    <div class="search-form">
+        <form action="/" method="post">
+            <input type="text" name="query_before" placeholder="How are you feeling now?">
+            <br>
+            <br>
+            <input type="text" name="query_after" placeholder="How do you want to feel?">
+            <br>
+            <br>
+            <div class="button-container">
+                <input type="submit" value="Get Recommendations">
+            </div>
+        </form>
+    </div>
+
+    <br>
+
+    <div class="results">
+        <p class="results-title">Results</p>
+        <div style="display: flex; justify-content: start;">
+            <div class="highlight-mood">
+                <p> Your mood: </p>
+            </div>
+            <p> &nbsp; {{ query }}</p>
+        </div>
+
+        <div class="highlight-rec">
+            <p>Recommendations:</p>
+        </div>
+
+        <p>{{ response }}</p>
+    </div>
+
+    <br>
+
+    <div class="rate">
+        <p>Already watched some movies? Log your watch history by providing ratings and feedback to get movies similar to your taste.</p>
+        <div class="button-container">
+            <a href="/rate" class="rate-button">Watch History</a>
+        </div>
+    </div>
 </body>
 
 </html>
