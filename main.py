@@ -18,4 +18,3 @@ query_engine = index.as_query_engine()
 response = query_engine.query("I've been feeling depressed. What movie can I watch to feel better?")
 print(response)
 
-#def sort_movies():
