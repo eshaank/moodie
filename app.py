@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import os
 
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = ""
 
 import logging
 import sys
