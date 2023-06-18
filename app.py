@@ -4,7 +4,7 @@ import os
 
 #load_dotenv()
 
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = ""
 
 
 import logging
