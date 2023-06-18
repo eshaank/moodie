@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rate Movies</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Watch History</h1>
+    </div>
+
+    <form action="/rate" method="POST">
+        <label for="movie">Movie:&nbsp;</label>
+        <input type="text" name="movie" id="movie">
+        <br><br><br>
+        <label for="feedback">How did you feel before and after watching this movie?</label>
+        <input type="text" name="feedback" id="feedback">
+        <br>
+        <br>
+        <div class="button-container">
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+    <br>
+    <p class="results-title">Your Movies</p>
+    <ul>
+        {% for movie, data in movies.items() %}
+        <li>{{ movie }} | Feedback: {{ data }}</li>
+        {% endfor %}
+    </ul>
+
+    <br>
+
+    <div class="button-container">
+        <a href="/" class="home-button">Home</a>
+    </div>
+</body>
+
+</html>
