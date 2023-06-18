@@ -1,0 +1,5 @@
+('Cars', 'I felt really sad before watching it. Afterwards I felt happy and energetic')
+('La La Land', 'I was really depressed before watching this movie. After I felt happy and optimistic')
+('Get Out', 'I felt happy before watching this move. After I felt angry, but relieved')
+("Schindler's List", 'I felt neutral before the movie. By the end I felt really mad')
+('The Big Short', 'I felt happy before the movie and angry afterwards')
